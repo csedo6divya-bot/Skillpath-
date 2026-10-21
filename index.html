@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillPath - Your Personalized Path to a Software Career</title>
+  <meta name="description" content="SkillPath builds a personalized, rule-based placement roadmap for students: choose a role, get a step-by-step plan matched to your level and study time, and track your progress.">
+  <meta name="theme-color" content="#0b1437">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233b5bfd'/%3E%3Cpath d='M16 44c10 0 8-24 18-24s6 14 14 14' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="SkillPath home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22"><path d="M5 23c6 0 5-13 11-13s4 8 11 8" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="27" cy="18" r="2.6" fill="#fff"/></svg>
+        </span>
+        <span class="brand-name">Skill<span>Path</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Main">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#features" data-nav="features">Features</a>
+        <a href="#how-it-works" data-nav="how-it-works">How it works</a>
+        <a href="#careers" data-nav="careers">Careers</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+        <button type="button" class="btn btn-primary btn-sm nav-cta" data-action="start">Build My Roadmap</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===================== HOME ===================== -->
+    <section class="view" id="view-home" data-view="home">
+      <div class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Placement roadmap for students</span>
+            <h1>Your Personalized Path to a Software Career.</h1>
+            <p class="lead">SkillPath turns your profile and target role into a step-by-step plan: what to learn, in which order, how long it will take at your daily study time, and what to build and revise before interviews.</p>
+            <div class="hero-actions">
+              <button type="button" class="btn btn-primary btn-lg" data-action="start" id="heroCta">Build My Roadmap</button>
+              <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
+            </div>
+            <div id="welcomeBack" class="welcome-back" hidden></div>
+            <p class="tagline">Your Skills. Your Goals. Your Personalized Path.</p>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="mock-card">
+              <div class="mock-head"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><b>Your roadmap</b></div>
+              <div class="mock-row"><span class="mock-badge b1">Phase 1</span><span>Foundations</span><i style="--w:100%"></i></div>
+              <div class="mock-row"><span class="mock-badge b2">Phase 2</span><span>Core skills</span><i style="--w:62%"></i></div>
+              <div class="mock-row"><span class="mock-badge b3">Phase 3</span><span>Projects</span><i style="--w:28%"></i></div>
+              <div class="mock-row"><span class="mock-badge b4">Phase 4</span><span>Interviews</span><i style="--w:8%"></i></div>
+              <div class="mock-foot">Sample illustration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Features</span>
+            <h2>Everything you need in one focused place</h2>
+            <p>Built for students who know where they want to go but not where to start.</p>
+          </div>
+          <div class="grid grid-3">
+            <article class="card feature"><div class="icon-chip">01</div><h3>Student profile</h3><p>Tell us your degree, year, preferred language, current level and how many hours you can study each day.</p></article>
+            <article class="card feature"><div class="icon-chip">02</div><h3>Six career paths</h3><p>Frontend, Backend, Full-Stack, Python, Java and AI/ML, each with its own skills, projects and interview topics.</p></article>
+            <article class="card feature"><div class="icon-chip">03</div><h3>Matched to your level</h3><p>Beginner, Intermediate or Advanced changes how long each topic takes and which projects you are asked to build.</p></article>
+            <article class="card feature"><div class="icon-chip">04</div><h3>Personalized roadmap</h3><p>Ordered skills, practice tasks, projects, free resources and interview topics, with a duration that follows your daily study hours.</p></article>
+            <article class="card feature"><div class="icon-chip">05</div><h3>Progress dashboard</h3><p>Tick off tasks, see completed and remaining work and watch your percentage grow. Progress survives a refresh.</p></article>
+            <article class="card feature"><div class="icon-chip">06</div><h3>Private by design</h3><p>No account, no server, no tracking. Your data stays in your own browser's LocalStorage and you can erase it anytime.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="how-it-works">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">How it works</span>
+            <h2>From "where do I start?" to a clear plan in four steps</h2>
+          </div>
+          <ol class="steps">
+            <li><span class="step-num">1</span><h3>Create your profile</h3><p>Share your level, language and available study time.</p></li>
+            <li><span class="step-num">2</span><h3>Pick a career</h3><p>Compare roles and choose your target.</p></li>
+                        <li><span class="step-num">3</span><h3>Get your roadmap</h3><p>Receive ordered skills, tasks, projects and resources.</p></li>
+            <li><span class="step-num">4</span><h3>Track progress</h3><p>Complete tasks and keep the momentum going.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="careers">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Career paths</span>
+            <h2>Choose the role you are aiming for</h2>
+            <p>Select a path to start. You can change it later without losing your progress in shared topics.</p>
+          </div>
+          <div class="grid grid-3" id="homeCareers"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="demo">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Try it instantly</span>
+            <h2>Explore with a demo student</h2>
+            <p>These demo profiles show how the roadmap changes with the career, level and daily hours. They are sample data, not real people.</p>
+          </div>
+          <div class="grid grid-3" id="demoCards"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2>About SkillPath</h2>
+            <p>SkillPath is a final project designed and built by <strong>Rachabattuni Divya</strong>. It is a front-end-only web app made with HTML, CSS and vanilla JavaScript, with no frameworks, paid services or backend.</p>
+            <p>The personalization is <strong>transparent and rule-based</strong>, not artificial intelligence. Your level decides whether foundation topics become quick reviews and which projects are recommended, and your daily study hours decide the schedule. The roadmap page lists exactly which rules were applied to you.</p>
+          </div>
+          <div class="card about-card">
+            <h3>What it is not</h3>
+            <ul class="ticks">
+              <li>It does not guarantee a job offer.</li>
+              <li>Your level is what you tell us. SkillPath does not test you.</li>
+              <li>Durations are estimates for a beginner studying consistently.</li>
+              <li>External learning links are free resources chosen by hand; availability can change.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ===================== PROFILE ===================== -->
+    <section class="view" id="view-profile" data-view="profile" hidden>
+      <div class="container narrow">
+        <div data-stepper="profile"></div>
+        <div class="page-head">
+          <h1 id="profileTitle">Tell us about yourself</h1>
+          <p>This information shapes the schedule of your roadmap. It is saved only in this browser.</p>
+        </div>
+        <form class="card form" id="profileForm" novalidate>
+          <div class="field">
+            <label for="pfName">Your name</label>
+            <input type="text" id="pfName" name="name" maxlength="40" autocomplete="name" placeholder="Enter your name" required>
+            <span class="field-error" data-error-for="name" role="alert"></span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="pfDegree">Degree</label>
+              <select id="pfDegree" name="degree" required></select>
+              <span class="field-error" data-error-for="degree" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="pfYear">Year</label>
+              <select id="pfYear" name="year" required></select>
+              <span class="field-error" data-error-for="year" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pfLanguage">Preferred programming language</label>
+            <select id="pfLanguage" name="language" required></select>
+            <span class="hint">Used for the programming-basics module. Python, Java and AI/ML careers use their own language.</span>
+            <span class="field-error" data-error-for="language" role="alert"></span>
+          </div>
+          <fieldset class="field">
+            <legend>Current skill level</legend>
+            <div class="segmented" id="pfLevels"></div>
+            <span class="hint">Your level decides how much time the foundations get and which projects are recommended.</span>
+            <span class="field-error" data-error-for="level" role="alert"></span>
+          </fieldset>
+          <div class="field">
+            <label for="pfHours">Daily study hours</label>
+            <input type="number" id="pfHours" name="hours" min="0.5" max="12" step="0.5" inputmode="decimal" placeholder="e.g. 2" required>
+            <span class="hint">Between 0.5 and 12 hours. Be realistic: consistency beats intensity.</span>
+            <span class="field-error" data-error-for="hours" role="alert"></span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg" id="profileSubmit">Save &amp; choose career</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== CAREER ===================== -->
+    <section class="view" id="view-career" data-view="career" hidden>
+      <div class="container">
+        <div data-stepper="career"></div>
+        <div class="page-head">
+          <h1 id="careerTitle">Choose your target career</h1>
+          <p>Select a role to see what it involves and which skills you will need.</p>
+        </div>
+        <div class="career-layout">
+          <div class="career-list" id="careerList" role="radiogroup" aria-label="Career paths"></div>
+          <aside class="card career-detail" id="careerDetail" aria-live="polite"></aside>
+        </div>
+        <div class="form-actions sticky-actions">
+          <button type="button" class="btn btn-primary btn-lg" id="careerConfirm">Confirm career</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ROADMAP ===================== -->
+    <section class="view" id="view-roadmap" data-view="roadmap" hidden>
+      <div class="container">
+        <div data-stepper="roadmap"></div>
+        <div id="roadmapBody"></div>
+      </div>
+    </section>
+
+    <!-- ===================== DASHBOARD ===================== -->
+    <section class="view" id="view-dashboard" data-view="dashboard" hidden>
+      <div class="container">
+        <div data-stepper="dashboard"></div>
+        <div id="dashboardBody"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#home" class="brand brand-light"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="18" height="18"><path d="M5 23c6 0 5-13 11-13s4 8 11 8" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="27" cy="18" r="2.6" fill="#fff"/></svg></span><span class="brand-name">Skill<span>Path</span></span></a>
+        <p>Your Skills. Your Goals. Your Personalized Path.</p>
+      </div>
+      <p class="footer-note">Built by Rachabattuni Divya with HTML, CSS and vanilla JavaScript. Data is stored only in your browser.</p>
+    </div>
+  </footer>
+
+  <!-- Toasts, modal -->
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="false"></div>
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalMessage">
+      <h3 id="modalTitle">Are you sure?</h3>
+      <p id="modalMessage"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="modalCancel">Cancel</button>
+        <button type="button" class="btn btn-primary" id="modalConfirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <noscript><div class="noscript">SkillPath needs JavaScript to run. Please enable it in your browser.</div></noscript>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
